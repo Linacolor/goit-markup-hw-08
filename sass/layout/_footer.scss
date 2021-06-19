@@ -4,17 +4,26 @@
   background-color: #2f303a;
 }
 .footer-items {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
   }
 }
 
 .footer-contacts {
-  @media screen and (min-width: 768px) {
-    width: 232px;
-    margin-right: 165px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
+  @media screen and (min-width: 768px) {
+    margin-right: 70px;
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
