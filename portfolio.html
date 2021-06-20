@@ -16,10 +16,12 @@
     <header class="header">
       <div class="container header-container">
         <nav class="navigation">
-          <a href="./index.html" class="logo">
+           <div class="header-logo-wraper">
+            <a href="./index.html" class="logo"></a>
             <span class="logo__text">Web</span>
             <span class="logo__text--header">Studio</span>
           </a>
+          </div>
           <button type="button" class="header__menu-btn" data-menu-button>
             <svg class="header__menu-icon">
                 <use href="./images/icons.svg#icon-menu"></use>
@@ -129,8 +131,7 @@
                   <img
                     src="./images/img8dz2.jpg"
                     alt="сотрудники"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -150,8 +151,7 @@
                   <img
                     src="./images/img9dz2.jpg"
                     alt="постер баскетболисты"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -173,8 +173,7 @@
                   <img
                     src="./images/img10dz2.jpg"
                     alt="эмблема ресторана морепродуктов"
-                    width="370"
-                    height="294"
+                     class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -196,8 +195,7 @@
                   <img
                     src="./images/img11dz2.jpg"
                     alt="наушники"
-                    width="370"
-                    height="294"
+                     class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -219,8 +217,7 @@
                   <img
                     src="./images/img12dz2.jpg"
                     alt="коробки"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -242,8 +239,7 @@
                   <img
                     src="./images/img13dz2.jpg"
                     alt="веб сайт открытый на компьютере"
-                    width="370"
-                    height="294"
+                     class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -265,8 +261,7 @@
                   <img
                     src="./images/img14dz2.jpg"
                     alt="книга"
-                    width="370"
-                    height="294"
+                    class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -288,8 +283,7 @@
                   <img
                     src="./images/img15dz2.jpg"
                     alt="этикетка"
-                    width="370"
-                    height="294"
+                     class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -311,8 +305,7 @@
                   <img
                     src="./images/img16dz2.jpg"
                     alt="ноутбук с открытым приложением"
-                    width="370"
-                    height="294"
+                     class="portfolio-img"
                   />
                   <p class="overlay">
                     Технокряк это современная площадка распространения
@@ -330,7 +323,79 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+     <footer class="footer">
+      <div class="container footer-items">
+        <div class="footer-contacts">
+          <a href="./index.html" class="logo logo-footer">
+            <span class="logo__text">Web</span>
+            <span class="logo__text--footer">Studio</span>
+          </a>
+          <address class="address">
+            <p class="address-map">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@example.com" class="address-link">
+              info@example.com
+            </a>
+            <a href="tel:+380991111111" class="address-link">
+              +38 099 111 11 11
+            </a>
+          </address>
+        </div>
+        <div class="footer-join">
+          <p class="join">присоединяйтесь</p>
+          <ul class="social-list">
+            <li class="social-list-item link">
+              <a href="" class="social-list-link footer-social-link">
+                <svg class="social-list-icon footer-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item link">
+              <a href="" class="social-list-link footer-social-link">
+                <svg class="social-list-icon footer-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item link">
+              <a href="" class="social-list-link footer-social-link">
+                <svg class="social-list-icon footer-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item link">
+              <a href="" class="social-list-link footer-social-link">
+                <svg class="social-list-icon footer-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe-title">Подпишитесь на рассылку</p>
+          <form action="#">
+            <div class="subscribe-label-wrapper">
+              <input
+                type="email"
+                name="mail"
+                class="subscribe-input"
+                placeholder="E-mail"
+              />
+
+              <button type="submit" class="subscribe-btn">
+                Подписаться
+                <svg class="subscribe-icon">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- <footer class="footer">
       <div class="container footer-items">
         <div class="footer-contacts">
           <a href="./index.html" class="logo logo-footer">
@@ -398,7 +463,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/menu.js"></script>
   </body>
 </html>

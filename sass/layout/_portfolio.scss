@@ -1,17 +1,35 @@
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .portfolio-list-item {
-  margin-top: 30px;
-  margin-left: 30px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 }
 
 .portfolio-link {
-  display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -19,6 +37,18 @@
   &:focus {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.portfolio-img {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
   }
 }
 .portfolio-link-sign {
