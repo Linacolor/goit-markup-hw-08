@@ -890,26 +890,13 @@ img {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
-@media screen and (min-width: 480px) {
-  .clients-list {
-    margin-right: -30px;
-    margin-bottom: -30px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .clients-list-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-list-item:not(:last-child) {
-    margin-right: 30px;
-  }
+.clients-list-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .clients-list-link {
