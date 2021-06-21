@@ -1471,4 +1471,11 @@ img {
 .portfolio-link:focus .overlay {
   transform: translateY(0%);
 }
+
+@media screen and (max-width: 479px) {
+  .overlay {
+    padding: 40px 24px;
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
