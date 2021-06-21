@@ -1,12 +1,30 @@
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // width: 528px;
+  // height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-close-btn {
   position: absolute;
@@ -19,6 +37,12 @@
   border: 1px solid #e5e5e5;
   cursor: pointer;
   padding: 0;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
 }
 .closebutton {
   width: 11px;

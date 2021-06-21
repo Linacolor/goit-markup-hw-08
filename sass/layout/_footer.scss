@@ -2,6 +2,15 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .footer-items {
   @media screen and (min-width: 768px) {
@@ -26,6 +35,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -96,6 +106,11 @@
   @media screen and (max-width: 767px) {
     display: block;
     text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
